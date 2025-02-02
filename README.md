@@ -37,31 +37,43 @@ cd pneumonia-detection
 ```
 
 2. Install dependencies using Pipenv:
-  ```
+```
   pip install pipenv 
   pipenv install
-  ```
+```
 
 4. Activate virtual environment:
-  ``pipenv shell``
+```
+pipenv shell
+```
 
 ## Docker Setup
 1. Build the Docker image:
-   ``docker build -t pneumonia-detector .``
+   ```
+   docker build -t pneumonia-detector .
+   ```
    
 3. Run the container:
-  ``docker run -d -p 5000:5000 --name pneumonia-container pneumonia-detector``
+   ```
+   docker run -d -p 5000:5000 --name pneumonia-container pneumonia-detector
+   ```
 
 3. Access the web interface at:  
-`http://localhost:5000`
+```
+http://localhost:5000
+```
 
 ## Run directly from app.py
 1. Start the Flask application:
-  ``python app/app.py``
+```
+python app/app.py
+```
 
 ## Usage
 1. Open web browser and navigate to:
-`http://localhost:5000`
+```
+http://localhost:5000
+```
 
 3. Upload a chest X-ray image (JPEG/PNG format)
 
