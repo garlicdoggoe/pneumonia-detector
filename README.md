@@ -1,5 +1,9 @@
 # Pneumonia Detection from Chest X-Ray Images
 
+![image](https://github.com/user-attachments/assets/857ad110-9b63-4cec-b589-c68c0425c252)
+
+![person367_virus_747](https://github.com/user-attachments/assets/1b760016-e27f-4a2d-960f-f6e693a79408) ![person368_bacteria_1672](https://github.com/user-attachments/assets/280679f1-b13f-4835-b1e5-69ab27e3485f)
+
 ## Problem Description
 This project implements a deep learning model to detect pneumonia from chest X-ray images. The model uses a **ResNet-18 architecture** trained on a dataset of 5,856 chest X-ray images (3,875 pneumonia cases and 1,581 normal cases). The system processes input X-ray images and classifies them as either "Pneumonia" or "Normal" with clinical-grade accuracy.
 
