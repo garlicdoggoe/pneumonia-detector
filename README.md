@@ -31,8 +31,7 @@ The trained model (`pneumonia_model.pth`) is included in the `model/` directory.
 
 ### Setup
 1. Clone the repository:
-``bash
-  git clone https://github.com/yourusername/pneumonia-detection.git
+``git clone https://github.com/yourusername/pneumonia-detection.git
   cd pneumonia-detection``
 
 2. Install dependencies using Pipenv:
@@ -40,24 +39,21 @@ The trained model (`pneumonia_model.pth`) is included in the `model/` directory.
   pipenv install``
 
 3. Activate virtual environment:
-  ``bash pipenv shell``
+  ``pipenv shell``
 
 ## Docker Setup
 1. Build the Docker image:
-   ``bash
-    docker build -t pneumonia-detector .``
+   ``docker build -t pneumonia-detector .``
    
 3. Run the container:
-  ``bash
-  docker run -d -p 5000:5000 --name pneumonia-container pneumonia-detector``
+  ``docker run -d -p 5000:5000 --name pneumonia-container pneumonia-detector``
 
 3. Access the web interface at:  
 `http://localhost:5000`
 
 ## Run directly from app.py
 1. Start the Flask application:
-  ``bash
-  python app/app.py``
+  ``python app/app.py``
 
 ## Usage
 1. Open web browser and navigate to:
