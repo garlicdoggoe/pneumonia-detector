@@ -79,18 +79,6 @@ http://localhost:5000
 
 4. Get instant prediction result (Pneumonia/Normal)
 
-## Project Structure
-Capstone/
-├── app/
-│ ├── app.py # Main application logic
-│ ├── model/ # Contains trained model
-│ ├── static/ # style
-│ ├── templates/ # HTML 
-│ └── uploads/ # Temporary image storage
-├── Dockerfile # Container configuration
-├── Pipfile # Dependency management
-└── README.md # This documentation
-
 ## Key Dependencies
 - Flask (Web framework)
 - PyTorch (Deep learning)
