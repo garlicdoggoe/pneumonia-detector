@@ -13,7 +13,7 @@ The ResNet-18 model was trained with the following key parameters:
 - **Loss Function**: Cross-Entropy Loss
 - **Optimizer**: Adam (Learning Rate = 0.001)
 - **Training Duration**: 15 epochs
-- **Validation Split**: 20% of training data
+- **Train, Validate, and Test Split**: 70% : 20% : 10% 
 - **Final Accuracy**: 92.3% on test set
 
 The trained model (`pneumonia_model.pth`) is included in the `model/` directory.
@@ -27,6 +27,59 @@ The trained model (`pneumonia_model.pth`) is included in the `model/` directory.
 
 ### Setup
 1. Clone the repository:
-```bash
+``bash
   git clone https://github.com/yourusername/pneumonia-detection.git
-  cd pneumonia-detection```
+  cd pneumonia-detection``
+
+2. Install dependencies using Pipenv:
+  ``bash
+  pip install pipenv
+  pipenv install``
+
+3. Activate virtual environment:
+  ``bash
+  pipenv shell``
+
+## Docker Setup
+1. Build the Docker image:
+   ``bash
+    docker build -t pneumonia-detector .``
+   
+3. Run the container:
+  ``bash
+  docker run -d -p 5000:5000 --name pneumonia-container pneumonia-detector``
+
+3. Access the web interface at:  
+`http://localhost:5000`
+
+## Run directly from app.py
+1. Start the Flask application:
+  ``bash
+  python app/app.py``
+
+## Usage
+1. Open web browser and navigate to:
+`http://localhost:5000`
+
+3. Upload a chest X-ray image (JPEG/PNG format)
+
+4. Get instant prediction result (Pneumonia/Normal)
+
+## Project Structure
+Capstone/
+├── app/
+│ ├── app.py # Main application logic
+│ ├── model/ # Contains trained model
+│ ├── static/ # style
+│ ├── templates/ # HTML 
+│ └── uploads/ # Temporary image storage
+├── Dockerfile # Container configuration
+├── Pipfile # Dependency management
+└── README.md # This documentation
+
+## Key Dependencies
+- Flask (Web framework)
+- PyTorch (Deep learning)
+- TorchVision (Image transformations)
+- Pillow (Image processing)
+- Gunicorn (Production server)
