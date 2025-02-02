@@ -31,14 +31,18 @@ The trained model (`pneumonia_model.pth`) is included in the `model/` directory.
 
 ### Setup
 1. Clone the repository:
-``git clone https://github.com/yourusername/pneumonia-detection.git <br>
-  cd pneumonia-detection``
+```
+git clone https://github.com/yourusername/pneumonia-detection.git 
+cd pneumonia-detection
+```
 
 2. Install dependencies using Pipenv:
-  ``pip install pipenv <br>
-  pipenv install``
+  ```
+  pip install pipenv 
+  pipenv install
+  ```
 
-3. Activate virtual environment:
+4. Activate virtual environment:
   ``pipenv shell``
 
 ## Docker Setup
