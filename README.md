@@ -49,14 +49,14 @@ pipenv shell
 
 ## Docker Setup
 1. Build the Docker image:
-   ```
-   docker build -t pneumonia-detector .
-   ```
+ ```
+ docker build -t pneumonia-detector .
+ ```
    
 3. Run the container:
-   ```
-   docker run -d -p 5000:5000 --name pneumonia-container pneumonia-detector
-   ```
+ ```
+ docker run -d -p 5000:5000 --name pneumonia-container pneumonia-detector
+ ```
 
 3. Access the web interface at:  
 ```
