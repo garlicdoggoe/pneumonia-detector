@@ -1,7 +1,5 @@
 # Pneumonia Detection from Chest X-Ray Images
 
-![image](https://github.com/user-attachments/assets/857ad110-9b63-4cec-b589-c68c0425c252)
-
 ![person367_virus_747](https://github.com/user-attachments/assets/1b760016-e27f-4a2d-960f-f6e693a79408)
 
 ## Problem Description
@@ -70,6 +68,7 @@ python app/app.py
 ```
 
 ## Usage
+![image](https://github.com/user-attachments/assets/857ad110-9b63-4cec-b589-c68c0425c252)
 1. Open web browser and navigate to:
 ```
 http://localhost:5000
