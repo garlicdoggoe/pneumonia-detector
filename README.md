@@ -30,7 +30,7 @@ The trained model (`pneumonia_model.pth`) is included in the `model/` directory.
 ### Setup
 1. Clone the repository:
 ```
-git clone https://github.com/yourusername/pneumonia-detection.git 
+git clone https://github.com/garlicdoggoe/pneumonia-detection.git 
 cd pneumonia-detection
 ```
 
